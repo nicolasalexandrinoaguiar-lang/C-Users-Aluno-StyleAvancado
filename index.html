@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Avançado</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>CSS Avançado</h1>
+    <p>Seletores · calc() · Medidas</p>
+  </header>
+
+  <main>
+
+    <!-- SEÇÃO 1: Seletores de atributo -->
+    <section class="card">
+      <h2>Seletor de Atributo</h2>
+      <input type="text"   placeholder="campo de texto" />
+      <input type="number" placeholder="campo numérico" />
+      <a href="https://google.com">link https</a>
+      <a href="arquivo.pdf">link .pdf</a>
+      <a href="http://site.com">link http</a>
+    </section>
+
+    <!-- SEÇÃO 2: Descendente, filho direto, irmãos -->
+    <section class="card">
+      <h2>Combinadores</h2>
+      <div class="caixa">
+        <p>Filho direto</p>
+        <em>Irmão adjacente (+)</em>
+        <small>Irmão geral (~)</small>
+        <div>
+          <span>Descendente</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO 3: nth-child e not -->
+    <section class="card">
+      <h2>:nth-child e :not()</h2>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li class="especial">Item 3 (especial)</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li class="especial">Item 6 (especial)</li>
+      </ul>
+    </section>
+
+    <!-- SEÇÃO 4: calc e medidas -->
+    <section class="card">
+      <h2>calc() e Medidas</h2>
+      <div class="barra" id="b1">50%</div>
+      <div class="barra" id="b2">calc(100% - 80px)</div>
+      <div class="barra" id="b3">20vw</div>
+      <div class="barra" id="b4">calc(8rem + 10px)</div>
+    </section>
+
+  </main>
+
+  <footer>Frontend · 2026</footer>
+
+</body>
+</html>

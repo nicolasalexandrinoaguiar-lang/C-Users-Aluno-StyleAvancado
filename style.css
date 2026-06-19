@@ -1,0 +1,161 @@
+:root{
+    --fundo:   #0d0d1a;
+    --card:    #16213e;
+    --rosa:    #e94560;
+    --verde:   #4ade80;
+    --amarelo: #f0a500;
+}
+
+*  {
+    margin:  0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+}
+
+body{
+    background: var(--fundo);
+    color:  #e0e0f0;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+header{
+    text-align: center;
+    background: #0f3460;
+    padding: calc(1rem + 10px) 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.card{
+    background: var(--card);
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    border-left: 4px splid car(--rosa);
+}
+
+.card h2 {
+    color: var(--rosa);
+    margin-bottom: 1rem;
+}
+
+footer{
+    text-align: center;
+    margin-top: 2rem;
+    opacity: 0.4;
+    font-size: 0.8rem;
+}
+
+input[type="text"] {
+    border: 2px solid  #533483;
+    background:  #1a1a2e;
+    color:  #e0e0f0;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+a[href^="https"] {
+    color: var(--verde);
+}
+a[href$=".pdf"]{
+    color: var(--amarelo);
+}
+
+.card a {
+    display: block;
+    margin: 0.2rem 0;
+}
+
+.caixa span {
+    color:  #666;
+}
+
+.caixa > p + em {
+    color: var(--verde);
+    font-weight: bold;
+}
+
+.caixa > p + em {
+    color: var(--rosa);
+}
+
+.caixa > p ~small {
+    color: var(--amarelo);
+}
+
+.caixa{
+    line-height: 2;
+}
+
+ul{
+    list-style: nome;
+}
+
+ul li{
+    padding: o.3rem 0.6rem;
+    border-radius: 0.3rem;
+}
+
+ul li:nth-child(odd){
+    background:  #1a1a2e;
+}
+
+ul li:nth-child(2){
+    color: var(--rosa);
+    font-weight: bold;
+}
+
+ul li:nth-child(3n){
+    color: var(--amarelo);
+}
+
+ul li:not(.especial) {
+    opacity: 0.6;
+}
+
+.barra {
+    height: 2rem;
+    margin: 0.4rem 0;
+    background:  #1a1a2e;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5 rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #000;
+}
+
+#b1{
+    width: 50%;
+    background: #533483;
+    color: #fff;
+}
+
+#b2{
+    width: calc(100% - 80px);
+    background: var(--rosa);
+}
+
+#b3{
+    width: 20vw;
+    background: var(--verde);
+}
+
+#b4{
+    width: calc(8rem + 10px);
+    background: var(--amarelo);
+}
